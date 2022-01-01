@@ -6,9 +6,10 @@ import fs from "fs"
 import React from "react"
 import Head from "next/head"
 import styles from "./posts.module.css"
+import { ParsedUrlQuery } from "querystring"
 
 interface PostPageProps {
-    code: any,
+    code: string,
     frontmatter: { [key: string]: string }
 }
 
@@ -34,8 +35,8 @@ const PostPage: NextPage<PostPageProps> = ({code, frontmatter}) => {
     )
 }
 
-export const getStaticProps: GetStaticProps = async (context) => {
-    const { category, name } = context.params
+export const getStaticProps: GetStaticProps = async ({ params }: any) => {
+    const { category, name } = params
     
     const source = `posts/${category}/${name}.mdx`
     const file = fs.readFileSync(source).toString()
