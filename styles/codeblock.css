@@ -1,5 +1,6 @@
 /**
  * One Dark theme for prism.js
+ * https://github.com/PrismJS/prism-themes/blob/master/themes/prism-one-dark.css
  * Based on Atom's One Dark theme: https://github.com/atom/atom/tree/master/packages/one-dark-syntax
  */
 
@@ -27,6 +28,10 @@
  * --syntax-gutter-background-color-selected: hsl(220, 13%, 26%);
  * --syntax-cursor-line: hsla(220, 100%, 80%, 0.04);
  */
+ pre {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
+    z-index: 1;
+ }
 
  code[class*="language-"],
  pre[class*="language-"] {
