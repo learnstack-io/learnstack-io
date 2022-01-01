@@ -11,3 +11,10 @@ body {
     background-color: var(--background-color);
     color: var(--text-color);
 }
+
+.rainbow-text {
+    background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
