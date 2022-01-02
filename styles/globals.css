@@ -11,6 +11,7 @@
     --text-color-light: lightgrey;
     --text-color-link: #0096FF;
     --border-color: lightgrey;
+    --border-color-secondary: rgba(128, 128, 128, 0.9);
     --category-color: gold;
     --marker-color: cyan;
 }

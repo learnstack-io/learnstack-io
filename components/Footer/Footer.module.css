@@ -1,0 +1,39 @@
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-top: 1px solid var(--border-color-secondary);
+    width: max(60%, 25rem);
+    margin: auto;
+    color: var(--text-color-light);
+    text-align: center;
+}
+
+.footer p {
+    font-size: 0.8rem;
+}
+
+.footer a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.icon {
+    margin: auto 0.2rem;
+    height: 0.8rem;
+}
+
+.logo {
+    height: 5rem;
+}
+
+.linkContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.linkContainer > * {
+    margin: 1rem;
+}

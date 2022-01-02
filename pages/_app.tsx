@@ -4,6 +4,7 @@ import "../styles/codetitle.css"
 import type { AppProps } from "next/app"
 import Head from "next/head"
 import Nav from "../components/Nav/Nav"
+import Footer from "../components/Footer/Footer"
 
 
 function MyApp({ Component, pageProps }: AppProps) {
@@ -14,6 +15,7 @@ function MyApp({ Component, pageProps }: AppProps) {
       </Head>
       <Nav />
       <Component {...pageProps} />
+      <Footer />
     </>
   )
 }
