@@ -9,6 +9,7 @@
     --text-color-link: #0096FF;
     --border-color: lightgrey;
     --category-color: gold;
+    --marker-color: cyan;
 }
 
 html,
@@ -19,8 +20,14 @@ body {
     color: var(--text-color);
 }
 
+li,
 p {
     font-size: 1.3rem;
+}
+
+li {
+    padding-left: 1rem;
+    padding-top: 0.2rem;
 }
 
 .rainbow-text {

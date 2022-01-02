@@ -22,6 +22,15 @@
     padding-left: 1rem;
 }
 
+.postContainer ul li::marker {
+    content: "➜";
+    color: var(--marker-color);
+}
+
+.postContainer ol li::marker {
+    color: var(--marker-color);
+}
+
 .header {
     border-bottom: 1px solid var(--border-color);
 }
