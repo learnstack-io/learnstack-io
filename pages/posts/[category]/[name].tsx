@@ -27,7 +27,6 @@ const PostPage: NextPage<PostPageProps> = ({code, frontmatter}) => {
                 <meta property="og:type" content="article" />
                 <meta property="og:description" content={frontmatter.description} />
             </Head>
-            <Nav />
             <main className={styles.postContainer}>
                 <header className={styles.header}>
                     <h1 className={styles.title}>{frontmatter.title}</h1>
