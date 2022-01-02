@@ -1,9 +1,12 @@
 :root {
     --background-color: #171717;
+    --background-color-blocks: hsl(220, 13%, 18%);
+    --blocks-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
     --text-color: white;
     --text-color-secondary: #71C562; 
     --text-color-file-name: lightgrey;
     --text-color-light: lightgrey;
+    --text-color-link: #0096FF;
     --border-color: lightgrey;
     --category-color: gold;
 }

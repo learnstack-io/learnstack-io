@@ -29,7 +29,7 @@
  * --syntax-cursor-line: hsla(220, 100%, 80%, 0.04);
  */
  pre {
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
+    box-shadow: var(--blocks-shadow);
     z-index: 1;
  }
 

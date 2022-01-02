@@ -1,5 +1,6 @@
 .code-title {
     width: max(10%, 15rem);
+    /* background color is hard coded to match code block color*/
     background: hsl(220, 13%, 18%);
     margin-bottom: -1.7rem;
     border-radius: 0.3em;
