@@ -2,3 +2,35 @@
     margin-inline: auto;
     width: max(60%, 25rem);
 }
+
+.header {
+    border-bottom: 1px solid var(--border-color);
+}
+
+.headerBottom {
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+}
+
+.headerBottom > a {
+    margin-left: auto;
+}
+
+.language{
+    height: 2rem;
+    border: 2px solid var(--category-color);
+    border-radius: 10px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-left: 0.2rem;
+}
+
+.title {
+    font-size: 3rem;
+    text-shadow: 3px 3px rgba(0, 0, 0, 0.5)
+}
+
+.description {
+    color: var(--text-color-light);
+}

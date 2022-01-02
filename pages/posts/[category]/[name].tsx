@@ -6,7 +6,6 @@ import fs from "fs"
 import React from "react"
 import Head from "next/head"
 import styles from "./posts.module.css"
-import { ParsedUrlQuery } from "querystring"
 
 interface PostPageProps {
     code: string,
@@ -23,11 +22,24 @@ const PostPage: NextPage<PostPageProps> = ({code, frontmatter}) => {
                 <meta charSet="UTF-8" />
                 <meta name="author" content={frontmatter.author} />
                 <meta name="keywords" content={frontmatter.keywords} />
+                <meta property="og:title" content={frontmatter.title} />
+                <meta property="og:type" content="article" />
+                <meta property="og:description" content={frontmatter.description} />
             </Head>
             <main className={styles.postContainer}>
-                <header>
-                    <h1>{frontmatter.title}</h1>
-                    <p>{frontmatter.author}</p>
+                <header className={styles.header}>
+                    <h1 className={styles.title}>{frontmatter.title}</h1>
+                    <div className={styles.headerBottom}>
+                        <p className={styles.description}>{frontmatter.description}</p>
+                        <a href={`/languages/${frontmatter.language}`}>
+                            <img
+                                className={styles.language}
+                                src={`/icons/languages/${frontmatter.language.toLowerCase()}.svg`}
+                                alt={`${frontmatter.language} Tag`}
+                                title={frontmatter.language}
+                            />
+                        </a>
+                    </div>
                 </header>
                 <Component />
             </main>
