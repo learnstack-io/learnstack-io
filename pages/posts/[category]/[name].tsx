@@ -6,6 +6,7 @@ import fs from "fs"
 import React from "react"
 import Head from "next/head"
 import styles from "./posts.module.css"
+import Nav from "../../../components/Nav/Nav"
 
 interface PostPageProps {
     code: string,
@@ -26,6 +27,7 @@ const PostPage: NextPage<PostPageProps> = ({code, frontmatter}) => {
                 <meta property="og:type" content="article" />
                 <meta property="og:description" content={frontmatter.description} />
             </Head>
+            <Nav />
             <main className={styles.postContainer}>
                 <header className={styles.header}>
                     <h1 className={styles.title}>{frontmatter.title}</h1>

@@ -1,0 +1,9 @@
+.nav {
+    background-color: var(--background-color-nav);
+    box-shadow: var(--blocks-shadow);
+    padding-left: 1rem;
+}
+
+.logo {
+    height: 5rem;
+}

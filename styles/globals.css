@@ -1,5 +1,6 @@
 :root {
     --background-color: #171717;
+    --background-color-nav: #222222;
     --background-color-blocks: hsl(220, 13%, 18%);
     --blocks-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
     --blocks-radius: 0.3em;
