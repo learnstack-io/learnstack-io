@@ -2,6 +2,7 @@
     --background-color: #171717;
     --background-color-blocks: hsl(220, 13%, 18%);
     --blocks-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
+    --blocks-radius: 0.3em;
     --text-color: white;
     --text-color-secondary: #71C562; 
     --text-color-file-name: lightgrey;
@@ -35,4 +36,31 @@ li {
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
+}
+
+.key-block {
+    display: flex;
+    align-items: center;
+    padding: 2rem;
+    background-color: var(--background-color-blocks);
+    box-shadow: var(--blocks-shadow);
+    border-radius: var(--blocks-radius);
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.key-icon {
+    height: 3rem;
+    margin-right: 3rem;
+}
+
+@media (max-width: 959px) {
+    .key-icon {
+        margin: 0;
+        margin-top: 1rem;
+    }
+
+    .key-block {
+        flex-direction: column;
+    }
 }

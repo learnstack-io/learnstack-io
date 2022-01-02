@@ -34,6 +34,7 @@
 .postContainer p img {
     margin: 1rem auto;
     max-width: 100%;
+    box-shadow: var(--blocks-shadow);
 }
 
 .header {
