@@ -1,14 +1,10 @@
 {
-    "sequenceTitle": "Learn Python",
+    "sequenceTitle": "Learn Python Right",
     "languages": ["Python"],
     "sequence": [
         {
-            "title": "Types",
-            "file": "types"
-        },
-        {
-            "title": "Classes",
-            "file": "types"
+            "title": "Introduction",
+            "file": "introduction"
         }
     ]
 }
