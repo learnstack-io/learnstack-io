@@ -8,7 +8,7 @@ const Footer: FC = () => {
             <p>
                 Built with
                 <Link href="https://nextjs.org/">
-                    <img className={styles.icon} src="/icons/languages/next.svg" alt="NextJS" />
+                    <a><img className={styles.icon} src="/icons/languages/next.svg" alt="NextJS" /></a>
                 </Link>
                 <br></br>
                 Copyright © 2021 - {new Date().getFullYear()} Jeffrey Shum. All Rights Reserved.
@@ -22,7 +22,7 @@ const Footer: FC = () => {
                 </Link>
             </div>
             <Link href="/">
-                <img className={styles.logo} src="/icons/logo.svg/" alt="Logo" />
+                <a><img className={styles.logo} src="/icons/logo.svg/" alt="Logo" /></a>
             </Link>
         </footer>
     )
