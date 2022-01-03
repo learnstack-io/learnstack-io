@@ -24,6 +24,11 @@ body {
     color: var(--text-color);
 }
 
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
 li,
 p {
     font-size: 1.3rem;

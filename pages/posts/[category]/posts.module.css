@@ -4,7 +4,6 @@
 }
 
 .postContainer a {
-    text-decoration: none;
     color: var(--text-color-link);
 }
 
