@@ -1,0 +1,31 @@
+.card {
+    display: flex;
+    width: 50%;
+    border: 1px solid var(--category-color);
+    border-radius: 5px;
+    margin-left: 1%;
+    margin-right: 1%;
+    margin-bottom: 3vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0.5rem;
+    background-color: var(--background-color-blocks);
+    height: 15rem;
+}
+
+@media (max-width: 959px) {
+    .card {
+        width: 120%;
+    }
+}
+
+.languageContainer {
+    display: flex;
+}
+
+.language {
+    height: 2rem;
+    margin-bottom: 1rem;
+}

@@ -1,0 +1,14 @@
+[
+    {
+        "title": "Learn Python",
+        "folder": "python",
+        "description": "Python learning made easy by teaching what's important and skipping over the rest.",
+        "languages": ["Python", "Javascript"]
+    },
+    {
+        "title": "Learn Python",
+        "folder": "python",
+        "description": "Python learning made easy by teaching what's important and skipping over the rest.",
+        "languages": ["Python"]
+    }
+]
