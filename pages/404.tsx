@@ -1,8 +1,8 @@
-import Head from "next/head";
-import Link from "next/link";
-import { FC } from "react";
+import { NextPage } from "next"
+import Head from "next/head"
+import Link from "next/link"
 
-const NotFoundPage: FC = () => {
+const NotFoundPage: NextPage = () => {
     return (
         <div style={{
             display: "flex",

@@ -1,10 +1,10 @@
-import { FC } from "react";
 import styles from "../styles/courses.module.css"
 import courseList from "./courses.json"
-import CourseCard from "../components/Cards/CourseCard/CourseCard";
-import Head from "next/head";
+import CourseCard from "../components/Cards/CourseCard/CourseCard"
+import Head from "next/head"
+import { NextPage } from "next"
 
-const CoursesPage: FC = () => {
+const CoursesPage: NextPage = () => {
     return (
         <>
             <Head>

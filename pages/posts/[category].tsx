@@ -1,5 +1,4 @@
-import { GetStaticPaths, GetStaticProps } from "next"
-import { FC } from "react"
+import { GetStaticPaths, GetStaticProps, NextPage } from "next"
 import fs from "fs"
 import Link from "next/link"
 import { useRouter } from "next/router"
@@ -18,7 +17,7 @@ interface CategoryPageProps {
     }
 }
 
-const CategoryPage: FC<CategoryPageProps> = (props) => {
+const CategoryPage: NextPage<CategoryPageProps> = (props) => {
     const router = useRouter()
 
     const { category } = router.query
