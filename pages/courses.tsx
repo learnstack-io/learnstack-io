@@ -1,6 +1,6 @@
 import { FC } from "react";
 import styles from "../styles/courses.module.css"
-import courseList from "../posts/courses.json"
+import courseList from "./courses.json"
 import CourseCard from "../components/Cards/CourseCard/CourseCard";
 
 const CoursesPage: FC = () => {
