@@ -70,15 +70,6 @@ export const getStaticPaths: GetStaticPaths = async () => {
     categories.forEach((category) => {
         paths.push({ params: { category: category }})
     })
-    // categories.forEach((category) => {
-    //     let files = fs.readdirSync(`posts/${category}`)
-        
-    //     files.forEach((file) => {
-    //         if (file.split(".").pop() == "json") {
-    //             console.log(file)
-    //         }
-    //     })
-    // })
 
     return {
         paths: paths,
