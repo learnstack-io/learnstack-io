@@ -10,7 +10,12 @@ const NotFoundPage: FC = () => {
             alignItems: "center",
             margin: "10% auto"
         }}>
-            <h1>The Page Being Requested Could Not Be Found.</h1>
+            <h1 style={{
+                textAlign: "center",
+                padding: "1rem"
+            }}>
+                The Page Being Requested Could Not Be Found.
+            </h1>
             <Link href="/">
                 Return To Home
             </Link>
