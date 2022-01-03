@@ -6,7 +6,6 @@ import fs from "fs"
 import React from "react"
 import Head from "next/head"
 import styles from "./posts.module.css"
-import Nav from "../../../components/Nav/Nav"
 
 interface PostPageProps {
     code: string,
