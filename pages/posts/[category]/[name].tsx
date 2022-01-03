@@ -20,7 +20,6 @@ const PostPage: NextPage<PostPageProps> = ({code, frontmatter}) => {
         <>
             <Head>
                 <title>{frontmatter.title}</title>
-                <meta charSet="UTF-8" />
                 <meta name="author" content={frontmatter.author} />
                 <meta name="keywords" content={frontmatter.keywords} />
                 <meta property="og:title" content={frontmatter.title} />
