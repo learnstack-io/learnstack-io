@@ -4,6 +4,7 @@ import fs from "fs"
 import Link from "next/link"
 import { useRouter } from "next/router"
 import styles from "./category.module.css"
+import Head from "next/head"
 
 interface CategoryPageProps {
     category: string,
@@ -23,6 +24,12 @@ const CategoryPage: FC<CategoryPageProps> = (props) => {
     const { category } = router.query
     
     return (
+        <>
+        <Head>
+            <title>{props.data.sequenceTitle}</title>
+            <meta property="og:description" content="Free and simple courses written by a developer who knows what's important and skips the rest." />
+            <meta name="description" content="Free and simple courses written by a developer who knows what's important and skips the rest." />
+        </Head>
         <main className={styles.mainContainer}>
             <h1 className={styles.title}>{props.data.sequenceTitle}</h1>
             <div className={styles.languageContainer}>
@@ -47,6 +54,7 @@ const CategoryPage: FC<CategoryPageProps> = (props) => {
                 })}
             </ol>
         </main>
+        </>
     )
 }
 

@@ -13,6 +13,8 @@ const NotFoundPage: FC = () => {
         }}>
             <Head>
                 <title>Page Could Not Be Found</title>
+                <meta property="og:description" content="Free and simple courses written by a developer who knows what's important and skips the rest." />
+                <meta name="description" content="Free and simple courses written by a developer who knows what's important and skips the rest." />
             </Head>
             <h1 style={{
                 textAlign: "center",
