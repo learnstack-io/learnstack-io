@@ -59,14 +59,14 @@ const PostPage: NextPage<PostPageProps> = ({code, frontmatter, category}) => {
                     {frontmatter.previous && 
                         <div className={styles.left}>
                             <Link href={`/posts/${category}/${frontmatter.previous}`}>
-                                Previous Article
+                                Previous
                             </Link>
                         </div>
                     }
                     {frontmatter.next && 
                         <div className={styles.right}>
                             <Link href={`/posts/${category}/${frontmatter.next}`}>
-                                Next Article
+                                Next
                             </Link>
                         </div>
                     }

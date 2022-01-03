@@ -36,6 +36,15 @@
     box-shadow: var(--blocks-shadow);
 }
 
+.postContainer p > code {
+    background-color: var(--background-color-blocks);
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    border-radius: 0.3em;
+    color: var(--text-color-keyword);
+    box-shadow: var(--blocks-shadow);
+}
+
 .header {
     border-bottom: 1px solid var(--border-color);
     margin-bottom: 3rem;
