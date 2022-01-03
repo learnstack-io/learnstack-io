@@ -1,0 +1,14 @@
+{
+    "sequenceTitle": "Learn Python",
+    "languages": ["Python"],
+    "sequence": [
+        {
+            "title": "Types",
+            "file": "types"
+        },
+        {
+            "title": "Classes",
+            "file": "types"
+        }
+    ]
+}

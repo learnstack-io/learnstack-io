@@ -77,6 +77,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
         let posts = fs.readdirSync(`posts/${category}`)
         
         posts.forEach((post) => {
+            if (post.split(".").pop() === "json") return
             paths.push({ params: { category: category, name: post.replace(".mdx", "") }})
         })
     })

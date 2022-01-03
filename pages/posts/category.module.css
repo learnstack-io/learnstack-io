@@ -1,0 +1,32 @@
+.mainContainer {
+    margin-inline: auto;
+    width: max(60%, 25rem);
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+
+.language {
+    height: 2rem;
+}
+
+.languageContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.list {
+    margin-bottom: 5rem;
+}
+
+.list li {
+    font-size: 2rem;
+}
+
+.list li:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+}
