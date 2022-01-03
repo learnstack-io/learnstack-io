@@ -2,6 +2,18 @@
     background-color: var(--background-color-nav);
     box-shadow: var(--blocks-shadow);
     padding-left: 1rem;
+    display: flex;
+}
+
+.links {
+    margin-left: auto;
+    margin-right: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.links > * {
+    margin-left: 1.2rem;
 }
 
 .logo {
