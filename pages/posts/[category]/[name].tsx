@@ -6,13 +6,26 @@ import fs from "fs"
 import React from "react"
 import Head from "next/head"
 import styles from "./posts.module.css"
+import Link from "next/link"
 
 interface PostPageProps {
-    code: string,
-    frontmatter: { [key: string]: string }
+    code: string;
+    frontmatter: FrontmatterInterface;
+    category: string;
 }
 
-const PostPage: NextPage<PostPageProps> = ({code, frontmatter}) => {
+interface FrontmatterInterface {
+    title: string;
+    description: string;
+    author: string;
+    sequence: string;
+    language: string;
+    keywords: string;
+    next?: string;
+    previous?: string;
+}
+
+const PostPage: NextPage<PostPageProps> = ({code, frontmatter, category}) => {
     const Component = React.useMemo(() => getMDXComponent(code), [code])
 
     return (
@@ -42,6 +55,22 @@ const PostPage: NextPage<PostPageProps> = ({code, frontmatter}) => {
                     </div>
                 </header>
                 <Component />
+                <nav aria-label="Post Article Navigation" className={styles.afterNav}>
+                    {frontmatter.previous && 
+                        <div className={styles.left}>
+                            <Link href={`/posts/${category}/${frontmatter.previous}`}>
+                                Previous Article
+                            </Link>
+                        </div>
+                    }
+                    {frontmatter.next && 
+                        <div className={styles.right}>
+                            <Link href={`/posts/${category}/${frontmatter.next}`}>
+                                Next Article
+                            </Link>
+                        </div>
+                    }
+                </nav>
             </main>
         </>
     )
@@ -65,7 +94,8 @@ export const getStaticProps: GetStaticProps = async ({ params }: any) => {
     return {
         props: {
             code,
-            frontmatter
+            frontmatter,
+            category: category
         }
     }
 }

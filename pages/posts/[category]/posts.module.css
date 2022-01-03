@@ -68,3 +68,20 @@
 .description {
     color: var(--text-color-light);
 }
+
+.afterNav {
+    margin-bottom: 3rem;
+    width: 100%;
+    display: flex;
+    font-size: 1.2rem;
+}
+
+.left {
+    margin-right: auto;
+    margin-left: 1rem;
+}
+
+.right {
+    margin-left: auto;
+    margin-right: 1rem;
+}
