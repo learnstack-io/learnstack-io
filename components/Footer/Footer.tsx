@@ -20,6 +20,9 @@ const Footer: FC = () => {
                 <Link href="https://ko-fi.com/jeffreyshum">
                     Donate
                 </Link>
+                <Link href="https://github.com/learnstack-io/learnstack-io">
+                    GitHub
+                </Link>
             </div>
             <Link href="/">
                 <a><img className={styles.logo} src="/icons/logo.svg/" alt="Logo" /></a>
