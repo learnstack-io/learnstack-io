@@ -14,7 +14,7 @@ const IndexPage: NextPage = () => {
             if (!firstHero) return
             firstHero.classList.add(styles.fade)
             
-            await new Promise(resolve => setTimeout(resolve, 1000))
+            await new Promise(resolve => setTimeout(resolve, 300))
 
             firstHero.remove()
         })
