@@ -18,7 +18,7 @@ const CoursesPage: NextPage = () => {
                 <h1>All Courses</h1>
             </header>
             <div className={styles.cardContainer}>
-                {courseList.map((data) => <CourseCard {...data} />)}
+                {courseList.map((data) => <CourseCard key={data.title} {...data} />)}
             </div>
             <h1 className={styles.center}>With More Coming Soon</h1>
         </>

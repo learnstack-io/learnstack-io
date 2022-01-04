@@ -8,7 +8,7 @@ interface CodeTitleProps {
 const CodeTitle: FC<CodeTitleProps> = (props) => {
     return (
         <div className="code-title">
-            <img className="code-icon" src={`/icons/languages/${props.language}.svg`} />
+            <img className="code-icon" src={`/icons/languages/${props.language}.svg`} alt={`${props.language} Icon`}/>
             <h2 className="code-file-name">{props.name}</h2>
         </div>
     )

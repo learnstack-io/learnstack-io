@@ -18,6 +18,7 @@ const CourseCard: FC<CourseCardProps> = (props) => {
             <div className={styles.languageContainer}>
                 {props.languages.map((language) => {
                 return <img
+                    key={language}
                     className={styles.language}
                     src={`/icons/languages/${language}.svg`}
                     alt={`${language} Tag`}

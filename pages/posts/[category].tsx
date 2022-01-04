@@ -34,6 +34,7 @@ const CategoryPage: NextPage<CategoryPageProps> = (props) => {
             <div className={styles.languageContainer}>
                 {props.data.languages.map((language) => {
                     return <img
+                        key={language}
                         className={styles.language}
                         src={`/icons/languages/${language}.svg`}
                         alt={`${language} Tag`}
