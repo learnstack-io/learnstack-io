@@ -20,6 +20,9 @@
     --border-color-secondary: rgba(128, 128, 128, 0.9);
     --category-color: gold;
     --marker-color: cyan;
+    --red: #FF3131;
+    --green: #50C878;
+    --dark-green: #00A36C;
 }
 
 html,
@@ -50,6 +53,10 @@ li {
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
+}
+
+.red {
+    color: var(--red);
 }
 
 .key-block {
