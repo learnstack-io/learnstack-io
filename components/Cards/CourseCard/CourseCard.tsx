@@ -20,7 +20,7 @@ const CourseCard: FC<CourseCardProps> = (props) => {
                 return <img
                     key={language}
                     className={styles.language}
-                    src={`/icons/languages/${language}.svg`}
+                    src={`/icons/languages/${language.toLowerCase()}.svg`}
                     alt={`${language} Tag`}
                     title={language}
                 />})
