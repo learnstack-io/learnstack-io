@@ -44,7 +44,7 @@ const CategoryPage: NextPage<CategoryPageProps> = (props) => {
             <ol className={styles.list}>
                 {props.data.sequence.map((post) => {
                     return (
-                        <li>
+                        <li key={post.title}>
                             <Link href={`/posts/${category}/${post.file}`}>
                                 {post.title}
                             </Link>
