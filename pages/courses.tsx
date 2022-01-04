@@ -20,6 +20,7 @@ const CoursesPage: NextPage = () => {
             <div className={styles.cardContainer}>
                 {courseList.map((data) => <CourseCard {...data} />)}
             </div>
+            <h1 className={styles.center}>With More Coming Soon</h1>
         </>
     )
 }
