@@ -83,6 +83,7 @@
     width: 100%;
     display: flex;
     font-size: 1.2rem;
+    position: relative;
 }
 
 .left {
@@ -93,4 +94,13 @@
 .right {
     margin-left: auto;
     margin-right: 1rem;
+}
+
+.center {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 150px;
 }

@@ -63,6 +63,11 @@ const PostPage: NextPage<PostPageProps> = ({code, frontmatter, category}) => {
                             </Link>
                         </div>
                     }
+                    <div className={styles.center}>
+                        <Link href={`/posts/${category}`}>
+                            Course Page
+                        </Link>
+                    </div>
                     {frontmatter.next && 
                         <div className={styles.right}>
                             <Link href={`/posts/${category}/${frontmatter.next}`}>
