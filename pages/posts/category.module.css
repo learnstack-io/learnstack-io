@@ -21,6 +21,7 @@
 
 .list {
     margin-bottom: 5rem;
+    list-style-type: circle;
 }
 
 .list li {
