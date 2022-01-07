@@ -5,6 +5,14 @@
         {
             "title": "Introduction",
             "file": "introduction"
+        },
+        {
+            "title": "Lesson 0: Environments and Tools and Bears. Oh My!",
+            "file": "lesson-0-environment"
+        },
+        {
+            "title": "Lesson 1: Variables, Types and Everything Nice",
+            "file": "lesson-1-variables"
         }
     ]
 }
