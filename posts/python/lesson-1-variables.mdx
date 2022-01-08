@@ -1,0 +1,199 @@
+---
+title: "Lesson 1: Variables, Types and Everything Nice"
+description: The Bread and Butter of Every Program
+author: Jeffrey Shum
+sequence: Learn Python Right
+language: Python
+keywords: Free Python Course
+previous: lesson-0-environment
+next: lesson-1-exercise
+---
+import CodeTitle from "../components/CodeTitle"
+import KeyBlock from "../components/KeyBlock"
+
+# Variables. . . Everything's A Variable
+
+In programming, ```variables```, much like in mathematics, hold information.
+They can be ```assigned```, or given a value, ```manipulated```, typically with math, or ```re-assigned``` to replace or change values.
+
+Python considers anything after a **single equal sign** to be variable assignment or re-assignment, if applicable.
+
+<CodeTitle name="example.py" language="python" />
+```python
+    the_meaning_of_life = 42
+    favorite_beverage = "Coffee"
+    is_easy = True
+```
+
+<KeyBlock>
+    The Python Convention for naming variables is to use ```snake case```, or all lowercase letters with words separated with underscores.
+    
+    Variables that represent ```constants```, or values that are meant to never change, are typically written with all uppercases with words also separated with underscores.
+
+    Notice that there is a line break after every line of code. Python is a programming language where this is important.
+    The computer needs to know where one line ends and another begins, which is what line breaks are for.
+    Think of each line as a sentence with a command that the computer will execute.
+    You wouldn't want to confuse two sentences together or you might get unexpected results, but you also want to keep your sentences short and concise.
+</KeyBlock>
+
+In the above example, 3 different variables are assigned to 3 different pieces of information. Let's take a deeper look at what's happening piece by piece.
+In Python, everything that is followed by a # is considered a ```comment```. Comments are used to annotate code and are ignored by the Python Interpreter.
+
+<CodeTitle name="example.py" language="python" />
+```python
+    # Here, we are assigning the variable, the_meaning_of_life, to the number, an integer to be exact, 42.
+    the_meaning_of_life = 42
+
+    # A number isn't very useful for determining your beverage of choice, so let's use something called a string instead.
+    favorite_beverage = "Coffee"
+
+    # Something is either easy or it's not, so let's use a boolean value for that.
+    is_easy = True
+
+    # All of these variables are assigned to types.
+```
+
+# Types of Types
+
+```Data Types``` are the classifications of information that variables can hold. They are the simplest form of data and are built into the language.
+These types are the backbone of every program and you will use them for any logic that you program.
+
+Here are the basic data types:
+
+## Strings
+
+```Strings``` are characters, words, sentences, and anything in between.
+They are created using matching single quotes (`'`) or double quotes (`"`) wraping around text.
+<CodeTitle name="strings.py" language="python" />
+```python
+    # This is a string using double quotes.
+    question = "What programming language are you going to master?"
+
+    # This is a string using single quotes.
+    answer = 'Python'
+
+    # If a string starts with a double quote it will end at the next double quote. Same for single quotes.
+
+    # But what if you need to use the characters ' or " in your string?
+    # We can use the forward slash character (\) to escape special characters so we can use them in strings!
+    quote = "\"Isn't Python so Easy\" said John."
+```
+<KeyBlock>
+    While you can use any mixture of single quote and double quote strings in your programs, it is best practice to maintain a uniform style for strings.
+    This course will use double quotes for all strings going forward.
+</KeyBlock>
+
+## Integers
+
+```Integers``` are numbers without a decimal place. Integers are not wrapped with quotes, rather they stand alone.
+<CodeTitle name="integers.py" language="python" />
+```python
+    # This is an integer.
+    luckiest_number = 13
+
+    # This is also an integer.
+    favorite_number = 4
+```
+
+## Floats
+
+If need to work with numbers that have decimals, we use floats.
+
+```Floats``` are numbers with a decimal place. Like integers, they too are not wrapped with quotes.
+<CodeTitle name="floats.py" language="python" />
+```python
+    # This is a float.
+    pi = 3.1415926
+
+    # This is also a float.
+    price = 10.99
+
+    # While this may appear to be an integer, since it has a trailing decimal, it is a float.
+    temperature = 30.0
+```
+
+## Booleans
+
+Computers are giant logic boxes. Thus, we need something to determine logical flow. That's where booleans come in.
+
+```Booleans``` are logical values that can only either be `True` or `False`.
+<CodeTitle name="booleans.py" language="python" />
+```python
+    # This variable is defined as true.
+    is_adult = True
+
+    # This variable is defined as false.
+    is_child = False
+```
+
+# More Complex Data Types
+
+These types build upon the basic data types, and allow for more complex data structures. These are useful in keeping organized data together.
+
+## Lists
+
+```Lists``` are ordered collections of any data type. They can contain strings, integers, floats, other lists, etc. in any combination.
+Lists are created using matching square brackets (`[ ]`), with list entries separated by commas.
+
+Other programming languages may call lists Arrays, which are lists which have an enforced type. This means that arrays may not contain 2 different types, like an integer and a string.
+Python does not have a built-in array type (outside of libraries, explained in future lessons). Simply put, arrays can be seen as lists in Python.
+<CodeTitle name="lists.py" language="python" />
+```python
+    # This is a list of strings.
+    dwarves = ["Sneezy", "Sleepy", "Happy", "Doc", "Grumpy", "Dopey", "Bashful"]
+
+    # This is a list of integers, strings, and floats.
+    wallet = [5, 0.25, 0.25, "Credit Card", 0.05, "Drivers License"]
+
+    # Notice that entries in lists are not unique and can be used multiple times.
+```
+
+## Dictionaries
+
+```Dictionaries``` are a collection of key-value pairs.
+
+In a ```key-value`` pair, the `key` represents a **unique** reference to a `value`.
+Each key is tied to a value, and values are retrieved through the key.
+Values can be any data type, including dictionaries.
+
+Dictionaries can be created using braces (`{ }`), with key value pairs separated by commas. The pairs themselves are represented by the left and right of a colon (`:`).
+The left represents the key and the right represents the value.
+<CodeTitle name="dictionaries.py" language="python" />
+```python
+    # This is a dictionary with strings as keys and integers/floats for values.
+    price_ledger = {
+        "Milk": 3,
+        "Eggs": 2,
+        "Flour": 1.5
+    }
+
+    # This is a dictionary with nested dictionaries and lists.
+    teams = {
+        # There can only be one West University team.
+        "West University": {
+            # That team can only have one list of players.
+            "players": [
+                # Here are the players.
+                "Steve",
+                "Alan",
+                "Rob"
+            ]
+        },
+        # Likewise, there can only be one North College team.
+        "North College": {
+            # That team also has a list of players.
+            "players": [
+                # And here are their players.
+                "Jason",
+                "Derrick",
+                "John"
+            ]
+        }
+    }
+```
+
+
+Don't worry if all of this information feels overwhelming. This lesson is simply a brief introduction to these types.
+All of these data types will each have their own in-depth lessons where properties, use cases, and working with types, will be explained in greater depth.
+
+The next article is a series of exercises where you will be working with data types in your IDE. You will get a better understanding the more you work with them.
