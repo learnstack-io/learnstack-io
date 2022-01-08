@@ -1,6 +1,6 @@
 .mainContainer {
     margin-inline: auto;
-    width: max(60%, 25rem);
+    width: var(--content-width);
     min-height: 70vh;
 }
 
@@ -21,6 +21,7 @@
 
 .list {
     margin-bottom: 5rem;
+    list-style-type: circle;
 }
 
 .list li {

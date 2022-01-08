@@ -1,6 +1,6 @@
 .postContainer {
     margin-inline: auto;
-    width: max(60%, 25rem);
+    width: var(--content-width);
 }
 
 .postContainer a {

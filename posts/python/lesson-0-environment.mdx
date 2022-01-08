@@ -1,0 +1,100 @@
+---
+title: "Lesson 0: Environments and Tools and Bears. Oh My!"
+description: A walkthrough of Python installation and developer tools.
+author: Jeffrey Shum
+sequence: Learn Python Right
+language: Python
+keywords: Free Python Course
+previous: introduction
+next: lesson-1-variables
+---
+import KeyBlock from "../components/KeyBlock"
+import CodeTitle from "../components/CodeTitle"
+
+# The Beginning of the Beginning
+
+Before we get started with writing code, we must first install Python.
+
+We need something called the Python Interpreter.
+
+The ```Python Interpreter``` is what defines Python. It takes your code, waves its magic wand at it, and transforms it into something your computer can understand.
+Believe it or not, your computer isn't as smart as you! It can't read or understand your words, and it sure can't feel emotions (yet).
+The Python Interpreter breaks down your code into a big soup of `1`s and `0`s (sort of) and passed it off to your computer to deal with the rest.
+Obviously, there are many steps being skipped over, but this is all you need to know for now.
+
+# Installation
+
+So how can we get our hands on this mythical piece of software. Well, lucky for you, most modern operating systems come with some version of Python pre-installed.
+To check, open up a ```terminal``` window and enter the following.
+
+```bash
+python --version
+```
+
+<KeyBlock>
+    ```terminal``` is the term that will be used to describe *Command Prompt* for Windows and *Terminal* for Mac and Linux. 
+    
+    *Command Prompt* can be found by typing `cmd` in the Windows Search Menu/Windows Button Menu
+    
+    *Terminal* can be found by clicking Launchpad and typing `terminal` for Mac devices.
+    
+    Linux users can press ctrl+alt+T.
+</KeyBlock>
+
+If the command returns with Python followed by a version number greater than 3.8, then you can skip the next section
+
+If not, we must install it ourselves.
+
+# Installing Python Manually
+
+Head over to [python.org](https://www.python.org/) and navigate your way to the downloads page.
+Find the appropriate download for your operating system. We will be using Python 3.8.9 for the majority of this course, but any newer version will work as well.
+Download that file and give it a run. If given the option, make sure to add Python to PATH and install pip.
+
+When the installer has finished, type the version command back into terminal to ensure that Python has installed. You may need to restart your computer.
+
+# Integrated Development Environments (IDEs)
+
+Now that you have Python installed, we need to figure out where to write our code.
+
+We need an ```integrated development environment (IDE)```, which is a text editor for code that includes many features that will be of interest to us, like syntax highlighting.
+Python comes with its very own IDE, ```IDLE```, right out of the box. While IDLE does come with all the features you may need to develop programs, it isn't ideal, especially as programs get increasingly more complex.
+
+Material in this course is written for an IDE called ```Visual Studio Code```, built by Microsoft. It is a free and open source code editor that can be found [here](https://code.visualstudio.com/).
+It is highly customizable, through extensions, and can be used for nearly every language out there, including Python.
+It is a monster of a program and not as friendly as IDLE, but making it your best friend will pay out in dividends.
+
+Other popular IDEs for Python include [PyCharm](https://www.jetbrains.com/pycharm/) (created by JetBrains, often considered the best IDE maker),
+[Sublime Text](https://www.sublimetext.com/), and [Atom](https://atom.io/).
+
+You will be staring at your IDE for a very long time. Make sure to get comfortable with it, and to avoid jumping around between IDEs if you are new to programming.
+
+# Files and Directories
+
+Once we have our tools ready, let's begin building our foundations. 
+
+```Files```, for the majority of this course, will be anything with the ending `.py`.
+Much like a text document may have the file ending in `.txt`, that tells you and your computer that that file is a text file,
+Python uses the file ending `.py`. All of your Python code will have to be inside a `.py` file.
+Every program will start with one file and end at one file (although other files can be called and used).
+Try to give your files names that make sense to the program. It isn't recommended to call your complex program `newfile.py`.
+
+```Directories``` are just folders. Directories can have files in them and they can be part of other directories.
+For consistency and ```convention```, or something that is not required but is recommended, we will be putting files in their own independent directories.
+
+This means that if we have a program like the one below, where we're printing a few things to the screen, the file `main.py`
+will be inside of a folder on it's own. The file name `main.py` tells us what it is, it's the main file.
+By having your non related scripts (another name for files in Python) inside their own directory, you can have a `main.py` file somewhere else without having a name conflict.
+
+<CodeTitle name="main.py" language="python" />
+```python
+    print("We're off to see the wizard.")
+    print("The wonderful Wizard of Oz.")
+```
+
+By making sure that files are given appropriate names and are isolated in appropriate directories, navigating your learning, projects, and work flow will be drastically improved.
+If you're working on a machine learning project, you don't want to be sifting through files for a game you made with PyGame.
+
+Organization is the key to success. This will save you a lot of turmoil later on.
+
+A strong foundation means you can build bigger and bigger things. A weak one will cost you a lot in the long run.
