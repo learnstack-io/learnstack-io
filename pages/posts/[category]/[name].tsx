@@ -56,25 +56,27 @@ const PostPage: NextPage<PostPageProps> = ({code, frontmatter, category}) => {
                 </header>
                 <Component />
                 <nav aria-label="Post Article Navigation" className={styles.afterNav}>
-                    {frontmatter.previous && 
-                        <div className={styles.left}>
-                            <Link href={`/posts/${category}/${frontmatter.previous}`}>
-                                Previous
-                            </Link>
-                        </div>
-                    }
                     <div className={styles.center}>
                         <Link href={`/posts/${category}`}>
                             Course Page
                         </Link>
                     </div>
-                    {frontmatter.next && 
-                        <div className={styles.right}>
-                            <Link href={`/posts/${category}/${frontmatter.next}`}>
-                                Next
-                            </Link>
-                        </div>
-                    }
+                    <div className={styles.articleLinks}>
+                        {frontmatter.previous && 
+                            <div className={styles.left}>
+                                <Link href={`/posts/${category}/${frontmatter.previous}`}>
+                                    Previous
+                                </Link>
+                            </div>
+                        }
+                        {frontmatter.next && 
+                            <div className={styles.right}>
+                                <Link href={`/posts/${category}/${frontmatter.next}`}>
+                                    Next
+                                </Link>
+                            </div>
+                        }
+                    </div>
                 </nav>
             </main>
         </>
