@@ -3,6 +3,7 @@
     box-shadow: var(--blocks-shadow);
     padding-left: 1rem;
     display: flex;
+    width: 100%;
 }
 
 .links {
