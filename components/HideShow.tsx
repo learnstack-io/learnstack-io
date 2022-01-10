@@ -1,4 +1,4 @@
-import { FC, useState } from "react";
+import { FC, useState } from "react"
 
 const HideShow: FC = (props) => {
     const [active, setActive] = useState(false)

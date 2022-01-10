@@ -1,5 +1,5 @@
-import Link from "next/link";
-import { FC } from "react";
+import Link from "next/link"
+import { FC } from "react"
 import styles from "./Nav.module.css"
 
 const Nav: FC = () => {
